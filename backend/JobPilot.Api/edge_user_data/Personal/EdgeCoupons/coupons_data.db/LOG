@@ -1,0 +1,6 @@
+2026/07/21-13:45:45.401 1d14 Reusing MANIFEST D:\Job Application Project\backend\JobPilot.Api\edge_user_data\Personal\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/07/21-13:45:45.403 1d14 Recovering log #4
+2026/07/21-13:45:45.405 1d14 Reusing old log D:\Job Application Project\backend\JobPilot.Api\edge_user_data\Personal\EdgeCoupons/coupons_data.db/000004.log 
+2026/07/21-13:45:46.235 3340 Level-0 table #8: started
+2026/07/21-13:45:46.277 3340 Level-0 table #8: 683217 bytes OK
+2026/07/21-13:45:46.387 3340 Delete type=0 #4
