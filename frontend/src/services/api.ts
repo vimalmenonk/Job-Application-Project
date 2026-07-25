@@ -9,7 +9,9 @@ import type {
   AnalyticsSummary
 } from '../types';
 
-const API_BASE = '/api';
+const BASE_HOST = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
+const API_BASE = BASE_HOST ? `${BASE_HOST}/api` : '/api';
+const HUB_URL = BASE_HOST ? `${BASE_HOST}/hubs/jobpilot` : '/hubs/jobpilot';
 
 const DEFAULT_RUNNER_CONFIG: AutomationConfig = {
   id: 'default',
@@ -303,7 +305,7 @@ export class SignalRService {
   ) {
     try {
       this.connection = new signalR.HubConnectionBuilder()
-        .withUrl('/hubs/jobpilot')
+        .withUrl(HUB_URL)
         .withAutomaticReconnect()
         .build();
 
